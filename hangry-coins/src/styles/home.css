@@ -1,0 +1,365 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@500&family=Noto+Sans+JP:wght@500&display=swap");
+/* Banner */
+/* font-family: 'Noto Sans JP', sans-serif; */
+.banner {
+  background-image: url("../assets/home/main-banner.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 98vh;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 1.8rem;
+  color: white;
+  font-weight: bold;
+  padding: 30px 0 0 0;
+}
+
+.banner-text {
+  margin-left: 20px; /* Adjust this value as needed */
+  margin-right: 20px; /* Adjust this value as needed */
+}
+
+.coins-logo {
+  width: 65%;
+  max-width: 1000px;
+  height: auto;
+  display: block;
+  margin: -90px auto 0 auto;
+  padding-top: 10px;
+}
+
+/* 060211 Div */
+.custom-div {
+  background-color: #060211;
+  height: 70px;
+}
+
+/* WILLKOMMEN Div */
+.welcome-div {
+  background-image: url("../assets/home/Header-background.jpg");
+}
+
+.welcome-div h2 {
+  color: #da1da2;
+  font-family: "Barlow", Sans-serif;
+  font-size: 37px;
+  font-weight: bold;
+  letter-spacing: 1.9px;
+}
+
+.welcome-div p {
+  font-family: "Barlow", Sans-serif;
+  color: #c5bdc0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Reset margins for elements inside welcome-div */
+.welcome-div h2,
+.welcome-div p {
+  margin-bottom: 0; /* Resets bottom margin */
+  margin-top: 0; /* Resets top margin */
+}
+
+/* SPIELEANBIETER DIV */
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&family=Barlow:wght@500&family=Noto+Sans+JP:wght@500&display=swap");
+.game-provider-div {
+  background-color: #060211;
+}
+.game-provider-div h2 {
+  color: #da1d5f;
+  font-family: "Barlow", Sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+  text-align: right;
+  padding: 3rem 0 0.5rem 0;
+}
+
+.game-provider-div h3 {
+  color: #da1da2;
+  font-family: "Barlow", Sans-serif;
+  font-size: 52px;
+  font-weight: bold;
+  text-align: right;
+}
+
+.game-provider-div p {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 30px;
+  color: #c5bdc0;
+  font-weight: bold;
+  margin-bottom: 0;
+  padding-bottom: 40px;
+}
+
+.hover-div,
+.divWithGradient {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    to bottom,
+    #060211,
+    #060211 25%,
+    #4c0923 25%,
+    #4c0923 75%,
+    #060211 75%,
+    #060211
+  );
+  height: auto; /* Adjust this to your desired height */
+  width: 100%;
+}
+
+.divWithGradient .card-img-top {
+  width: 220px;
+  height: 70px;
+  display: block;
+  margin: 0 auto;
+}
+.img-div {
+  background-color: #3f0733;
+  padding: 5px 0;
+  margin: 5px 5px 0 5px;
+}
+
+.divWithGradient .card {
+  padding: 0; /* Remove padding from the card */
+  text-align: center;
+  background-color: #7a0f48;
+  width: 250px;
+  margin: 10px auto 30px auto;
+}
+
+.divWithGradient .btn-center {
+  display: inline-block;
+  margin: 0 auto;
+}
+.divWithGradient a,
+.divWithGradient .card-text {
+  font-family: "Barlow", Sans-serif;
+  color: white;
+  font-size: 16px;
+}
+
+.divWithGradient a {
+  color: #060211;
+  text-decoration: none;
+}
+
+.divWithGradient .card,
+.divWithGradient .card-body {
+  padding: 0; /* Ensure no padding */
+}
+
+.divWithGradient .see-more a {
+  background-color: white;
+  font-weight: bold; /* Increase font weight */
+  display: block; /* Make it a block element */
+  width: 100%; /* Full width */
+  padding: 2px 0; /* Add some vertical padding */
+  text-shadow: 0.5px 0.5px 0.5px #000;
+  margin: 1.5rem 0 2rem 0;
+}
+
+/* WIE WIR Section */
+.wie-wer-section {
+  padding: 4rem 0; /* Increased padding for more space */
+  background-color: #060211;
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+}
+
+.wie-wer-title {
+  color: #da1da2;
+  font-family: "Barlow", Sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 1rem; /* Add space below the title */
+}
+
+.wie-wer-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centers content vertically */
+  height: 100%; /* Full height of the container */
+}
+.wie-wer-desc {
+  color: #c5bdc0;
+  font-family: "Barlow", Sans-serif;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  font-weight: bold;
+  margin-bottom: 2rem; /* Add space below the description */
+}
+
+.wie-wer-image {
+  width: 90%;
+  max-width: 100%;
+  height: auto;
+  display: block; /* Center the image */
+  margin-left: auto; /* Center the image */
+  margin-right: auto; /* Center the image */
+}
+
+/* FAQ */
+
+.faq-section {
+  background-color: #060211;
+  position: relative;
+  padding: 0;
+}
+
+.faq-section::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
+  background-image: url("../assets/home/electric-water-effect.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.faq-section h2 {
+  font-family: "Barlow", Sans-serif;
+  font-size: 50px;
+  color: #f7e7ec;
+  font-weight: bold;
+}
+
+.faq-container {
+  position: relative;
+  z-index: 2;
+  background-color: #f8e7ec;
+}
+
+.toggle-input {
+  display: none;
+}
+
+.toggle-label-faq,
+.arrow-icon {
+  padding: 10px;
+}
+
+.arrow-icon {
+  background-color: #00a72b;
+  border-radius: 50%;
+  padding: 3px 6px;
+  color: #f8e7ec;
+  margin-right: 10px;
+}
+
+.toggle-label-faq {
+  font-family: "Barlow", Sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #090c24;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.arrow-icon .fas.fa-arrow-down {
+  display: none;
+}
+
+.toggle-input:checked + .toggle-label-faq .arrow-icon .fas.fa-arrow-down {
+  display: inline-block;
+}
+
+.toggle-input:checked + .toggle-label-faq .arrow-icon .fas.fa-arrow-up {
+  display: none;
+}
+.toggle-input:checked + .toggle-label-faq .arrow-icon {
+  background-color: #cf1002;
+}
+
+.expanding-content {
+  font-family: "Barlow", Sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #090c33;
+  padding: 0 20px;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(-1em);
+  transition: max-height 0.5s, opacity 0.5s, transform 0.5s;
+  background-color: #e32859;
+}
+
+.toggle-input:checked + .toggle-label-faq + .expanding-content {
+  max-height: 1000px;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 1200px) {
+  /* Banner */
+  .banner {
+    background-position: center;
+    height: 60vh;
+  }
+
+  .coins-logo {
+    width: 60%;
+    max-width: 900px;
+    margin-top: -70px;
+  }
+  /* SPIELEANBIETER DIV */
+  .divWithGradient .card {
+    width: 230px; /* or whatever fixed width you prefer */
+  }
+  .divWithGradient .card-img-top {
+    width: 200px;
+  }
+}
+
+@media (max-width: 992px) {
+  /* Banner */
+  .coins-logo {
+    max-width: 800px;
+    margin-top: -50px;
+    padding-top: 5px;
+  }
+  /* SPIELEANBIETER DIV */
+  .divWithGradient .card {
+    width: 100%; /* or whatever fixed width you prefer */
+    margin: 5px auto;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Banner */
+  .banner {
+    background-position: top;
+    height: 50vh;
+    font-size: 1rem;
+  }
+  .coins-logo {
+    max-width: 700px;
+    margin-top: -30px;
+    padding-top: 5px;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Banner */
+  .coins-logo {
+    width: 70%;
+    max-width: 700px;
+    margin-top: -30px;
+    padding-top: 5px;
+  }
+  .banner {
+    background-position: center;
+    height: 40vh;
+    padding-top: 10px;
+  }
+}

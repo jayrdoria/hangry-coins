@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap");
+
+.nav-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #060919;
+  overflow: visible; /* Ensure that overflowing content is visible */
+  transition: height 0.3s ease-out;
+  height: auto; /* Allow .nav-bar to grow/shrink based on content */
+  min-height: 90px; /* Ensure a minimum height */
+}
+
+.container-fluid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-bar {
+  flex: 1; /* Ensure the Navbar occupies the entire width */
+}
+
+.nav-bar.expanded {
+  height: auto;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar-logo {
+  width: 120px;
+  height: 60px;
+  margin-right: 150px;
+}
+
+.nav-bar .nav-link {
+  text-decoration: none;
+  font-family: "Barlow", sans-serif;
+  font-size: 14px;
+  color: white;
+  font-weight: 600;
+  margin: 15px 10px;
+}
+
+.nav-bar .nav-link:hover,
+.nav-bar .nav-link.active {
+  color: #d91d5f;
+}
+
+.active-link {
+  color: #d91d5f;
+}
+
+/* Medium devices (tablets in landscape, 768px and up to 991px) */
+@media (max-width: 991px) {
+  .navbar-logo {
+    margin: 0 30px 0 10px;
+  }
+
+  .nav-bar .nav-link {
+    margin: 15px 5px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container-fluid {
+    flex-direction: column;
+    justify-content: normal;
+    align-items: normal;
+  }
+  .navbar-collapse {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertical centering */
+    align-items: center; /* Horizontal centering */
+  }
+
+  /* Adjust the links' margins to space them evenly */
+  .nav-bar .nav-link {
+    display: flex;
+    align-items: center; /* Vertical centering within the link */
+    justify-content: center; /* Horizontal centering */
+    margin: 10px 0;
+  }
+}
