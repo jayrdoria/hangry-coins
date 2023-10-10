@@ -286,17 +286,18 @@
   font-weight: bold;
   color: #090c33;
   padding: 0 20px;
-  max-height: 0;
   overflow: hidden;
   opacity: 0;
+  max-height: 0;
   transform: translateY(-1em);
-  transition: max-height 0.5s, opacity 0.5s, transform 0.5s;
+  transition: max-height 0.8s ease-in-out, opacity 0.5s ease-in-out,
+    transform 0.5s ease-in-out;
   background-color: #e32859;
 }
 
 .toggle-input:checked + .toggle-label-faq + .expanding-content {
-  max-height: 1000px;
   opacity: 1;
+  max-height: 1000px;
   transform: translateY(0);
 }
 

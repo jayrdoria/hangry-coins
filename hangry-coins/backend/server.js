@@ -50,6 +50,22 @@ app.get("/homeFaq", (req, res) => {
   );
 });
 
+app.get("/homeGameProviderDetails", (req, res) => {
+  connection.query(
+    "SELECT id, provider_name, name, image_url, casino_logo_url, free_spins, bonus, description, rtp_description, min_bet, max_bet, min_profit, max_profit, free_spin_description FROM homeGameProviderDetails",
+    (err, results) => {
+      if (err) {
+        console.error("Database error:", err);
+        return res
+          .status(500)
+          .json({ error: "Internal Server Error", details: err.message });
+      }
+
+      res.json(results);
+    }
+  );
+});
+
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}/`);
 });
