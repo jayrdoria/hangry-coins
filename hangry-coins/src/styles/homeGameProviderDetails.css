@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&family=Barlow:wght@500&family=Noto+Sans+JP:wght@500&display=swap");
+
+.png-container {
+  background-color: #1f053d;
+}
+
+.png-container h2 {
+  color: #f10c54;
+  font-family: "Barlow", Sans-serif;
+  font-size: 73px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.game-container {
+  position: relative;
+  border: 8px solid #810f47;
+  background-color: #c9c9c9;
+}
+.border-wrapper {
+  display: inline-block;
+  padding: 0px 30px 10px 30px; /* Adjust this to control the border thickness */
+  background-color: #400d44; /* Your desired border color */
+  border-radius: 5px;
+}
+
+/* Left border with color #570b42 */
+.game-container::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -32px; /* Adjusted for reduced thickness */
+  height: calc(100%);
+  transform: translateY(-50%);
+  width: 24px; /* Reduced thickness */
+  background-color: #570b42;
+  border-radius: 5px 0 0 5px;
+}
+
+/* Right border with color #570b42 */
+.game-container::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -32px; /* Adjusted for reduced thickness */
+  height: calc(100%);
+  transform: translateY(-50%);
+  width: 24px; /* Reduced thickness */
+  background-color: #570b42;
+  border-radius: 0 5px 5px 0;
+}
+
+.game-container h2 {
+  color: #f7e7ec;
+  font-family: "Barlow", Sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  background-color: #060919;
+  font-style: normal;
+}
+
+.col-lg-9 h2 {
+  margin-bottom: 0; /* This removes the default margin from the bottom of the h2 */
+}
+
+.image-container {
+  height: 350px; /* Adjust this value to your preference */
+  overflow: hidden;
+}
+
+.col-lg-9 img {
+  max-width: 100%;
+  min-height: 100%;
+}
+
+.inner-content {
+  background-color: #b9b4b4;
+  width: 103.2%;
+}
+
+.casino-logo-padding {
+  padding: 0.5rem 0 0.5rem 0.5rem;
+}
+
+.casino-desc {
+  color: #15032a;
+  font-family: "Barlow", Sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  text-wrap: nowrap;
+}
+.casino-desc ~ p {
+  color: #da1d5f;
+  font-family: "Barlow", Sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: -1rem;
+}
+
+.casino-desc-padding {
+  padding: 1.25rem 1.25rem 1.25rem 0;
+}
+
+.abs-btn {
+  background-color: #e0255d;
+  color: white; /* Adjust text color if needed */
+  border: none; /* Removes default button border */
+  font-family: "Barlow", Sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 0.75rem 1.25rem 0.75rem 1.25rem;
+  letter-spacing: 1px;
+}
+
+.abs-btn:hover {
+  background-color: #b32246;
+  color: white;
+}
+
+.abs-btn:active {
+  background-color: #e0255d !important; /* A darker shade of the original color, adjust as needed */
+  color: white !important;
+}
+
+.inner-padding {
+  padding-left: 12px;
+}
+
+.desc-container h2 {
+  background-color: #c9c9c9 !important;
+  color: #15032a;
+  font-family: "Barlow", Sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.desc-container {
+  padding-right: 12px !important;
+}
+
+.desc-container p {
+  font-family: "Barlow", Sans-serif;
+  font-size: 16px;
+  color: #7a7a7a;
+  font-weight: bold;
+}
+
+.desc-container .text-center.px-1 {
+  margin-bottom: 0;
+}
+
+.desc-container .text-center.px-1 {
+  margin-bottom: 0;
+}
+
+.desc-container .text-center.pt-1 {
+  margin-bottom: 0; /* remove the bottom margin of the h2 */
+}
+
+.desc-container .text-center.px-1 {
+  margin-top: 0; /* remove the top margin of the p */
+}
+
+.desc-container .desc-details {
+  font-style: italic;
+  color: #15032a;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.desc-container .desc-details span {
+  font-style: normal;
+  font-size: 15px;
+  color: #54595f;
+}
+
+.desc-details div:nth-child(odd) {
+  background-color: #b9b4b4;
+}
+
+.desc-details div {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0.5rem 0 0.5rem;
+}
+
+.desc-details div span {
+  flex-shrink: 0; /* Prevents the span from shrinking */
+}
+
+@media (min-width: 1400px) {
+  .desc-container h2 {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .image-container {
+    height: calc(
+      350px + 7vw
+    ); /* Start with 350px and adjust based on viewport width */
+    max-height: 380px;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 1199px) {
+  .png-container,
+  .container {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 0; /* Remove any padding that may be set */
+    padding-right: 0; /* Remove any padding that may be set */
+  }
+  .image-container {
+    height: calc(
+      390px + 7vw
+    ); /* Start with 350px and adjust based on viewport width */
+    max-height: 500px;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 991px) {
+  .game-container h2.text-center.py-3 {
+    width: calc(
+      100% - 12px
+    ); /* Adjust the 8px based on the thickness of your border or the extent of the overlap. */
+  }
+  .image-container img {
+    width: calc(
+      100% - 12px
+    ); /* Adjust the 12px based on the thickness of the border or the extent of the overlap. */
+    display: block; /* Ensures the image takes the full width */
+  }
+  p.text-center.px-1.pt-1,
+  .desc-details,
+  h2.text-center.pt-1 {
+    margin-left: 12px; /* Push the entire element to the right. */
+  }
+  .inner-content {
+    width: 100%;
+  }
+  .image-container {
+    height: 350px; /* Adjust this value to your preference */
+  }
+  .png-container .text-center .mt-4 h2 {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 767px) {
+  .casino-desc-padding .row {
+    flex-direction: row; /* Set the flex direction to row */
+    align-items: center; /* Vertically center the items */
+  }
+
+  .casino-desc-padding .col-md-5 {
+    flex: 0 0 auto; /* Don't grow, don't shrink, auto width based on content */
+    max-width: none; /* Override Bootstrap's max-width */
+    margin-right: 10px; /* Add some spacing between the image and the text */
+  }
+
+  .desc-col {
+    flex: 1; /* Allow these elements to take up remaining space */
+  }
+
+  .desc-col .casino-desc {
+    margin-bottom: 0; /* Remove any bottom margin */
+  }
+  .casino-desc {
+    text-align: center;
+    padding-bottom: 10px;
+  }
+}

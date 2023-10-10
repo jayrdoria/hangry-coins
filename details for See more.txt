@@ -1,0 +1,15 @@
+<div>
+      <h2>{details.provider_name}</h2>
+      <h3>{details.name}</h3>
+      <img src={details.image_url} alt={details.name} />
+      <img src={details.casino_logo_url} alt="Casino Logo" />
+      <p>Free Spins: {details.free_spins}</p>
+      <p>Bonus: {details.bonus}</p>
+      <p>Description: {details.description}</p>
+      <p>RTP: {details.rtp_description}%</p>
+      <p>Min Bet: €{details.min_bet}</p>
+      <p>Max Bet: €{details.max_bet}</p>
+      <p>Min Profit: €{details.min_profit}</p>
+      <p>Max Profit: €{details.max_profit}</p>
+      <p>Free Spin Description: {details.free_spin_description}</p>
+</div>

@@ -88,9 +88,23 @@ function Home() {
                     {provider.description}
                   </p>
                   <div className="see-more">
-                    <a href="#" className="">
-                      SEE MORE
-                    </a>
+                    {provider.id === 1 ? (
+                      <a href="/playngo" className="">
+                        SEE MORE
+                      </a>
+                    ) : provider.id === 2 ? (
+                      <a href="/netent" className="">
+                        SEE MORE
+                      </a>
+                    ) : provider.id === 3 ? (
+                      <a href="/pragmatic" className="">
+                        SEE MORE
+                      </a>
+                    ) : provider.id === 4 ? (
+                      <a href="/yggdrasil" className="">
+                        SEE MORE
+                      </a>
+                    ) : null}
                   </div>
                 </div>
               </div>

@@ -1,0 +1,19 @@
+CREATE DATABASE IF NOT EXISTS HCdatabaseBeta;
+USE HCdatabaseBeta;
+
+CREATE TABLE homeGameProviderDetails (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    provider_name VARCHAR(255) NOT NULL,
+    name VARCHAR(255) NOT NULL,
+    image_url VARCHAR(1000) NOT NULL,
+    casino_logo_url VARCHAR(1000) NOT NULL,  -- Changed to casino_logo_url
+    free_spins INT,                 -- Assuming the number of free spins can be an integer.
+    bonus VARCHAR(255),             -- This can be adjusted based on the specific data you intend to store.
+    description TEXT,               -- Text type for long descriptions.
+    rtp_description DECIMAL(5,2),  -- For storing percentage values like 96.50.
+    min_bet DECIMAL(10,2),         -- For storing currency values like €0.20.
+    max_bet DECIMAL(10,2),         -- For storing currency values like €100.
+    min_profit DECIMAL(10,2),      -- For storing currency values like €10.
+    max_profit DECIMAL(10,2),      -- For storing currency values like €2,500.
+    free_spin_description ENUM('Yes', 'No') NOT NULL   -- Added ENUM column for free_spin_description.
+);
