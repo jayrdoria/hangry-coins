@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&family=Barlow:wght@500&family=Noto+Sans+JP:wght@500&display=swap");
+body,
+html {
+  overflow-x: hidden;
+}
+
+.echtgeld-container {
+  background-image: url("../assets/echtgeld-casino/background-1st.jpg");
+  background-size: cover; /* Ensure the image always covers the entire container */
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 0 1rem;
+}
+.echtgeld-container .row h2 {
+  font-family: "Barlow", Sans-serif;
+  font-size: 32px;
+  color: #e0d6d6;
+  font-weight: bold;
+}
+
+.echtgeld-container .row p {
+  font-family: "Barlow", Sans-serif;
+  font-size: 16px;
+  color: #7a7a7a;
+  font-weight: bold;
+}
+
+.card-background {
+  background-image: url("../assets/echtgeld-casino/casino-card.png");
+  background-size: 115% 115%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 5% 10% 5% 10%;
+}
+
+.card-body img {
+  width: 80%;
+  height: auto;
+}
+
+.card-body a {
+  background-color: #bf8cfa;
+  color: #000000;
+  font-weight: bold;
+  font-size: 15px;
+  width: 80%;
+}
+
+.card-body a:hover {
+  background-color: #9955e7;
+  color: #000000;
+}
+
+.card-background h5 {
+  font-weight: bold;
+  font-size: 14px;
+  color: #757a7a;
+}
+
+.card-background h2 {
+  color: #ffffff;
+}
+
+.side-echtgeld .mascot {
+  margin-top: 20px;
+  z-index: 1;
+}
+
+.overlap-tub {
+  margin: -25px 0 -25px 0; /* Adjust this value as needed */
+  width: 100%;
+  height: 440px;
+}
+
+.tub-container {
+  width: 100%;
+}
+
+.tub-card2,
+.tub-card {
+  background-color: #140426;
+  width: 90%;
+  margin-top: 40px; /* moved the card down to avoid overlap with the h2 */
+}
+
+.tub-card2 {
+  margin-top: 10px;
+}
+
+.tub-image-wrapper {
+  background-color: #510fa8;
+  display: inline-block;
+  padding: 0 40px 0 40px; /* You can adjust this value to change the size of the oblong */
+  border-radius: 50%; /* To give a slightly rounded oblong shape */
+  margin: 10px auto 0 auto;
+}
+
+.tub-image-wrapper2 {
+  background-color: #510fa8;
+  display: flex; /* Changed from inline-block to flex */
+  align-items: center; /* Vertically center the content */
+  padding: 0 10px 0 10px;
+  border-radius: 50%;
+  margin-left: 50px;
+}
+
+.tub-image-wrapper2 .below-tub-img {
+  width: 70px; /* Adjust the width of the image as needed */
+  height: auto; /* Maintains the aspect ratio */
+  border-radius: 50%;
+}
+
+.tub-card img {
+  display: block;
+  margin: 0 auto;
+}
+
+.tub-card2 h4,
+.tub-card h4 {
+  font-family: "Barlow", Sans-serif;
+  font-size: 24px;
+  color: #e0d6d6;
+  font-weight: bold;
+  text-align: center;
+}
+
+.tub-info-wrapper {
+  background-color: #510fa8;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  padding: 5px;
+  margin: 5px auto;
+}
+
+.tub-info-wrapper h4 {
+  margin: 0 0 0 0;
+  color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.tub-info-wrapper p {
+  color: #ffffff !important;
+  font-size: 12px !important;
+  margin: 0;
+}
+
+.casino-offer-title {
+  text-align: center;
+  z-index: 2; /* to ensure it's above the tub image */
+  margin-bottom: 30px; /* adjust as needed to position it above the card */
+  position: absolute; /* to position it relative to the tub-container */
+  width: 100%; /* to make it span the width of the tub-container */
+  top: 10%; /* adjust to move the h2 up or down */
+  margin-top: 5px;
+  font-family: "Barlow", Sans-serif;
+  font-size: 20px;
+  color: #e0d6d6;
+  font-weight: bold;
+}
+@media (max-width: 991px) {
+  .casino-offer-title {
+    font-size: 17px;
+    margin-top: -2px;
+  }
+  .tub-image-wrapper2 {
+    margin: 10px 0 0 0;
+  }
+  .tub-image-wrapper2 .below-tub-img {
+    width: 100px;
+  }
+  .card-body a {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 1199px) {
+}
+
+@media (max-width: 767px) {
+  .card-background img {
+    width: 150px;
+  }
+  .casino-offer-title {
+    font-size: 30px;
+    margin-top: 0;
+  }
+  .tub-image-wrapper img {
+    width: 100%;
+  }
+  .tub-info-wrapper h4 {
+    font-size: 20px;
+  }
+  .tub-info-wrapper p {
+    font-size: 16px !important;
+  }
+  .overlap-tub {
+    height: 470px;
+  }
+  .card-body a {
+    font-size: 15px;
+  }
+}

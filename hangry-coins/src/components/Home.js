@@ -6,16 +6,10 @@ import alienPicture from "../assets/home/alien-picture.png"; // Adjust the path 
 function Home() {
   const [gameProvider, setGameProvider] = useState([]);
   const [faqs, setFaqs] = useState([]);
-  const [activeFaq, setActiveFaq] = useState(null);
 
-  // Toggle the FAQ state
-  const handleToggle = (index) => {
-    if (activeFaq === index) {
-      setActiveFaq(null); // If the currently active FAQ is clicked again, hide it
-    } else {
-      setActiveFaq(index); // Otherwise, show the clicked FAQ
-    }
-  };
+  useEffect(() => {
+    document.title = "HangryCoins - Be Filled with Bonuses";
+  }, []);
 
   useEffect(() => {
     // Fetching game providers

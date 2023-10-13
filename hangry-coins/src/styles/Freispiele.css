@@ -1,0 +1,7 @@
+.freispiele-container {
+  background-image: url("../assets/echtgeld-casino/background-2nd.jpg");
+  background-size: cover; /* Ensure the image always covers the entire container */
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 0 1rem;
+}

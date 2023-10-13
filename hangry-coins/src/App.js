@@ -9,6 +9,8 @@ import PlayNGo from "./components/PlayNGo";
 import Netent from "./components/Netent";
 import Pragmatic from "./components/Pragmatic";
 import YggDrasil from "./components/YggDrasil";
+import EchtgeldCasino from "./components/EchtgeldCasino";
+import Freispiele from "./components/Freispiele";
 
 function App() {
   return (
@@ -17,12 +19,13 @@ function App() {
         <CustomNavbar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
           <Route path="/playngo" element={<PlayNGo />} />
           <Route path="/netent" element={<Netent />} />
           <Route path="/pragmatic" element={<Pragmatic />} />
           <Route path="/yggdrasil" element={<YggDrasil />} />
-          <Route path="/echtgeld-casino" element={<BlankPage />} />
-          <Route path="/freispiele" element={<BlankPage />} />
+          <Route path="/echtgeld-casino" element={<EchtgeldCasino />} />
+          <Route path="/Freispiele" element={<Freispiele />} />
           <Route path="/casino-bonus" element={<BlankPage />} />
           <Route path="/spielautomaten" element={<BlankPage />} />
         </Routes>

@@ -12,14 +12,18 @@ const dbConfig = {
   user: process.env.DB_USER,
   password: process.env.DB_PASSWORD,
   database: process.env.DB_NAME,
+  waitForConnections: true,
+  connectionLimit: 10,
+  queueLimit: 0,
 };
 
-const connection = mysql.createConnection(dbConfig);
+// Create a pool instead of a single connection
+const pool = mysql.createPool(dbConfig);
 
 app.use(cors());
 
 app.get("/homeGameProvider", (req, res) => {
-  connection.query(
+  pool.query(
     "SELECT id, image, description FROM homeGameProvider",
     (err, results) => {
       if (err) {
@@ -35,8 +39,21 @@ app.get("/homeGameProvider", (req, res) => {
 });
 
 app.get("/homeFaq", (req, res) => {
-  connection.query(
-    "SELECT id, faqTitle, faqDesc FROM homeFaq",
+  pool.query("SELECT id, faqTitle, faqDesc FROM homeFaq", (err, results) => {
+    if (err) {
+      console.error("Database error:", err);
+      return res
+        .status(500)
+        .json({ error: "Internal Server Error", details: err.message });
+    }
+
+    res.json(results);
+  });
+});
+
+app.get("/homeGameProviderDetails", (req, res) => {
+  pool.query(
+    "SELECT id, provider_name, name, image_url, casino_logo_url, free_spins, bonus, description, rtp_description, min_bet, max_bet, min_profit, max_profit, free_spin_description FROM homeGameProviderDetails",
     (err, results) => {
       if (err) {
         console.error("Database error:", err);
@@ -50,9 +67,9 @@ app.get("/homeFaq", (req, res) => {
   );
 });
 
-app.get("/homeGameProviderDetails", (req, res) => {
-  connection.query(
-    "SELECT id, provider_name, name, image_url, casino_logo_url, free_spins, bonus, description, rtp_description, min_bet, max_bet, min_profit, max_profit, free_spin_description FROM homeGameProviderDetails",
+app.get("/echtgeldCasino", (req, res) => {
+  pool.query(
+    "SELECT image_url, bonus, free_spin, website_link FROM echtgeldCasino",
     (err, results) => {
       if (err) {
         console.error("Database error:", err);
