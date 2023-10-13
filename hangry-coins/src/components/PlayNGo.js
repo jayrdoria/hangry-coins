@@ -5,6 +5,10 @@ function PlayNGo() {
   const [details, setDetails] = useState([]);
 
   useEffect(() => {
+    document.title = "PLAY'N GO - HangryCoins";
+  }, []);
+
+  useEffect(() => {
     fetch(`http://localhost:5001/homeGameProviderDetails`)
       .then((response) => response.json())
       .then((data) => {

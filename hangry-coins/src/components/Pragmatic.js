@@ -5,6 +5,10 @@ function Pragmatic() {
   const [details, setDetails] = useState([]);
 
   useEffect(() => {
+    document.title = "PRAGMATIC - HangryCoins";
+  }, []);
+
+  useEffect(() => {
     fetch(`http://localhost:5001/homeGameProviderDetails`)
       .then((response) => response.json())
       .then((data) => {

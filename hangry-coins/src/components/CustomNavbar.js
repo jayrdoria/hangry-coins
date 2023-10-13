@@ -34,8 +34,9 @@ function CustomNavbar() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav>
             <NavLink
-              to="/"
-              className={getLinkClassName("/")}
+              to="/home"
+              default
+              className={getLinkClassName("/home")}
               onClick={() => setExpanded(false)}
             >
               HOME
