@@ -1,7 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&family=Barlow:wght@500&family=Noto+Sans+JP:wght@500&display=swap");
+
 .freispiele-container {
   background-image: url("../assets/echtgeld-casino/background-2nd.jpg");
   background-size: cover; /* Ensure the image always covers the entire container */
   background-repeat: no-repeat;
   background-position: center center;
   padding: 0 1rem;
+}
+.banner-div {
+  background-image: url("../assets/freispiele/Bannerholder.png");
+  background-size: cover; /* Ensure the image always covers the entire container */
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 0 6rem;
+}
+
+.banner-div img {
+  width: 100%;
+}
+
+.header-div {
+  background-color: #0099dc;
+  padding: 0.5rem 0;
+  border-radius: 20px;
+  width: 100%;
+}
+.header-div h2 {
+  padding: 0;
+  margin: 0;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+}
+
+.header-info-div {
+  background-color: #006491;
+  font-family: "Barlow", Sans-serif;
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  padding: 1rem;
+}
+/* Database Data */
+.fsdb-container {
+  background-image: url("../assets/freispiele/card-holder.png");
+  background-size: cover; /* Ensure the image always covers the entire container */
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 86%;
+  margin: 5px auto 0 auto;
+  padding: 1.5rem 0.25rem;
+}
+.fsdb-container h2 {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: flex-end; /* Align to the bottom */
+  height: 100%; /* Take full height */
+  color: white;
+  margin: 20px 0 0 15px;
+}
+.check-icon {
+  color: #630bca; /* Icon color */
+  background-color: #0d0116; /* Background color */
+  border-radius: 50%; /* Makes the background circular */
+  padding: 0.25rem; /* Space around the icon; adjust as needed */
+  margin-right: 0.25rem; /* Space between the icon and the list item text */
+}
+
+.fsdb-container img {
+  margin: 20px 0 0 18px;
+}
+
+.fsdb-container span {
+  font-family: "Barlow", Sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #0d0116;
+}
+
+.freispiele-container .terms {
+  font-family: "Barlow", Sans-serif;
+  font-size: 12px;
+  color: #0d0116;
+  font-weight: bold;
+}
+
+.num-spins {
+  font-family: "Barlow", Sans-serif;
+  font-size: 31px;
+  color: #ffffff;
+  font-weight: bold;
+  line-height: 1;
+  margin-top: 20px;
+}
+
+.btn-details {
+  background-image: url("../assets/freispiele/play-bonus-action-button.png");
+  background-repeat: no-repeat; /* Ensures the image doesn't repeat */
+  background-position: center center; /* Centers the image */
+  border: none; /* Removes any default borders */
+  font-family: "Barlow", Sans-serif;
+  color: #ffffff;
+  line-height: 1;
+  font-size: 9px;
+  width: 100%;
+}
+
+.freispiele-container button {
+  padding: 0 0 0 0;
+}
+
+.btn-details:hover {
+  color: #ffffff;
+}
+
+@media (min-width: 1200px) {
+  .fsdb-container h2 {
+    margin: 10px 0 0 15px;
+  }
+  .btn-details {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .fsdb-container h2 {
+    margin: 5px 0 0 35px;
+  }
+  .fsdb-container img {
+    margin: 20px 0 0 30px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .fsdb-container img {
+    margin: 20px 0 0 40px;
+  }
+  .fsdb-container {
+    margin-bottom: 20px;
+  }
+  .btn-details {
+    width: 85%;
+  }
+  .fsdb-container h2 {
+    margin: 10px 0 0 35px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .fsdb-container h2 {
+    margin: 5px 0 0 35px;
+  }
+  .fsdb-container img {
+    margin: 20px 0 0 25px;
+  }
+  .btn-details {
+    width: 90%;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 991px) {
+  .fsdb-container h2 {
+    color: #0d0116;
+  }
+}
+
+@media (max-width: 991px) {
+  .fsdb-container h2 {
+    margin: 5px 0 0 35px;
+  }
+}
+
+@media (max-width: 767px) {
+  .banner-div {
+    padding: 0 2rem;
+  }
+  .banner-div img {
+    height: auto;
+  }
+  .fsdb-container h2 {
+    display: block;
+    margin: 15px 15px 0 0;
+    text-align: right;
+  }
+  .fsdb-container img {
+    display: block;
+    margin: 0 auto;
+  }
+  .freispiele-container .check-item,
+  .freispiele-container .terms {
+    padding: 0 1rem;
+  }
+
+  .num-spins {
+    margin-top: 0;
+    font-size: 21px;
+  }
+  .btn-details {
+    width: 80%;
+  }
+  .fsdb-container:nth-child(1),
+  .fsdb-container:nth-child(2) {
+    margin-bottom: -30px;
+  }
+
+  @media (max-width: 576px) {
+    .btn-details {
+      width: 95%;
+    }
+  }
 }
