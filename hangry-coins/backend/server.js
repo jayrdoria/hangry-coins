@@ -83,6 +83,28 @@ app.get("/echtgeldCasino", (req, res) => {
   );
 });
 
+app.get("/freispiele", (req, res) => {
+  pool.query(
+    "SELECT ID, Image, CheckItems, Link, Bonus FROM freispiele",
+    (err, results) => {
+      if (err) {
+        console.error("Database error:", err);
+        return res
+          .status(500)
+          .json({ error: "Internal Server Error", details: err.message });
+      }
+
+      // Convert CheckItems string to an array for each row
+      const formattedResults = results.map((item) => ({
+        ...item,
+        CheckItems: item.CheckItems.split(",").map((str) => str.trim()),
+      }));
+
+      res.json(formattedResults);
+    }
+  );
+});
+
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}/`);
 });
