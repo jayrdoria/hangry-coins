@@ -8,7 +8,7 @@ function Spielautomaten() {
     document.title = "SLOT MACHINES - HangryCoins";
 
     // Fetch data from your backend
-    fetch("http://localhost:5001/spielautomaten") // Adjust the endpoint if needed
+    fetch("https://hangrycoins.com:5001/spielautomaten") // Adjust the endpoint if needed
       .then((response) => response.json())
       .then((data) => setData(data))
       .catch((error) => console.error("Error fetching data:", error));

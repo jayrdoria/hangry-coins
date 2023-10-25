@@ -12,7 +12,7 @@ function EchtgeldCasino() {
     document.title = "Social Casino Page - HangryCoins";
 
     // Fetch data from the server
-    fetch("http://localhost:5001/echtgeldCasino")
+    fetch("https://hangrycoins.com:5001/echtgeldCasino")
       .then((response) => response.json())
       .then((data) => setData(data))
       .catch((error) => console.error("Error fetching data:", error));

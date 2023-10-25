@@ -14,13 +14,13 @@ function Home() {
 
   useEffect(() => {
     // Fetching game providers
-    fetch("http://localhost:5001/homeGameProvider")
+    fetch("https://hangrycoins.com:5001/homeGameProvider")
       .then((response) => response.json())
       .then((data) => setGameProvider(data))
       .catch((error) => console.error("Error fetching game providers:", error));
 
     // Fetching FAQs
-    fetch("http://localhost:5001/homeFaq")
+    fetch("https://hangrycoins.com:5001/homeFaq")
       .then((response) => response.json())
       .then((data) => setFaqs(data))
       .catch((error) => console.error("Error fetching FAQs:", error));
