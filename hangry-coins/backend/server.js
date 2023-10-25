@@ -3,9 +3,40 @@ const mysql = require("mysql2");
 const cors = require("cors");
 const AWS = require("aws-sdk");
 const bodyParser = require("body-parser");
+const https = require("https");
+const fs = require("fs");
 
 const app = express();
 const port = 5001;
+
+const privateKey = fs.readFileSync(
+  "/home/admin/web/hangrycoins.com/ssl/ssl.hangrycoins.com.key",
+  "utf8"
+);
+const certificate = fs.readFileSync(
+  "/home/admin/web/hangrycoins.com/ssl/ssl.hangrycoins.com.crt",
+  "utf8"
+);
+const ca = fs.readFileSync(
+  "/home/admin/web/hangrycoins.com/ssl/ca.crt",
+  "utf8"
+);
+app.use(
+  cors({
+    origin: "https://hangrycoins.com",
+    methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+  })
+);
+const credentials = {
+  key: privateKey,
+  cert: certificate,
+  ca: ca,
+};
+
+const httpsServer = https.createServer(credentials, app);
+httpsServer.listen(port, () => {
+  console.log(`HTTPS Server running on https://hangrycoins.com:${port}`);
+});
 
 require("dotenv").config();
 
