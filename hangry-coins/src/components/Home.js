@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "../styles/home.css";
 import hangryCoinsLogo from "../assets/home/logo-banner.png"; // Adjust the path accordingly
 import alienPicture from "../assets/home/alien-picture.png"; // Adjust the path accordingly
+import "font-awesome/css/font-awesome.min.css";
 
 function Home() {
   const [gameProvider, setGameProvider] = useState([]);

@@ -67,9 +67,16 @@ function Freispiele() {
                     </div>
                     <div className="row text-center my-3">
                       <div className="col-md-6 col-sm-6 col-6">
-                        <button className="btn btn-details py-3 px-4">
-                          SPIELEN SIE MIT BONI
-                        </button>
+                        <a
+                          href={casino.Link}
+                          className="btn-link"
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          <button className="btn btn-details py-3 px-4">
+                            SPIELEN SIE MIT BONI
+                          </button>
+                        </a>
                       </div>
                       <div className="col-md-6 col-sm-6 col-6">
                         <button className="btn btn-details py-3 px-4">

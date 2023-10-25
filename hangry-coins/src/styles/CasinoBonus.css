@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&family=Barlow:wght@500&family=Noto+Sans+JP:wght@500&display=swap");
+
+.casino-bonus-header {
+  background-color: #df255d;
+  color: #ffffff;
+  font-family: "Roboto", Sans-serif;
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 1;
+  padding: 30px;
+}
+
+.casino-bonus-footer {
+  background-color: #df255d;
+}
+
+.casino-bonus-footer p {
+  font-family: "Barlow", Sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0;
+  padding: 30px;
+}
+.casino-bonus-header p {
+  text-align: center;
+  font-size: 16px;
+  padding-top: 10px;
+  margin: 0;
+}
+
+.casino-bonus-header-2 {
+  background-image: url("../assets/casino-bonus/Background-1.jpg");
+  background-size: cover; /* Ensure the image always covers the entire container */
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 0 1rem;
+  color: #ffffff;
+  font-family: "Roboto", Sans-serif;
+  font-size: 58px;
+  font-weight: bold;
+  padding: 3rem;
+  text-align: center;
+  line-height: 1;
+}
+
+.casino-bonus-header-3 {
+  font-family: "Barlow", Sans-serif;
+  background-color: #0d1031;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 1;
+  color: #ffffff;
+}
+
+.casino-bonus-header-3 img {
+  width: 100px;
+}
+
+.casino-bonus-header-3 .header3-div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2rem;
+}
+.casino-bonus-header-3 .header3-div span {
+  margin-left: 1.5rem;
+}
+
+.casino-bonus {
+  background-image: url("../assets/casino-bonus/Background-2.jpg");
+  background-size: cover; /* Ensure the image always covers the entire container */
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.stakes-card,
+.x1-card,
+.magical-spin-card,
+.casino-universe-card,
+.blizz-casino-card {
+  background-size: cover; /* Ensure the image always covers the entire container */
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.stakes-card {
+  background-image: url("../assets/casino-bonus/stakescard.jpg");
+}
+
+.x1-card {
+  background-image: url("../assets/casino-bonus/x1card.jpg");
+}
+
+.magical-spin-card {
+  background-image: url("../assets/casino-bonus/magicalspincard.jpg");
+}
+
+.casino-universe-card {
+  background-image: url("../assets/casino-bonus/casinouniversecard.jpg");
+}
+
+.blizz-casino-card {
+  background-image: url("../assets/casino-bonus/blizzcasinocard.jpg");
+}
+
+.casino-bonus-card .img_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.casino-bonus-card img {
+  padding-top: 10px;
+}
+
+.casino-bonus-card .casino_name {
+  font-family: "Barlow", Sans-serif;
+  font-size: 32px;
+  color: #e0255d;
+  font-weight: bold;
+  text-align: center;
+}
+
+.star-rating {
+  margin: -8px 0 -2px 0;
+  letter-spacing: 5px;
+}
+
+.star-rating .fa-star,
+.star-rating .fa-star-half-alt {
+  color: #f3ae58;
+}
+
+.img_container p {
+  font-family: "Barlow", Sans-serif;
+  font-size: 16px;
+  color: #7a7a7a;
+  font-weight: bold;
+}
+
+.casino-bonus-check-icon {
+  color: #ffffff; /* Icon color */
+  background-color: #1c2152; /* Background color */
+  border-radius: 50%; /* Makes the background circular */
+  padding: 0.25rem; /* Space around the icon; adjust as needed */
+  margin-right: 0.25rem; /* Space between the icon and the list item text */
+}
+
+.casino-bonus-check-item {
+  display: flex;
+  align-items: center;
+  color: #1c2152;
+  font-family: "Barlow", Sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.casino-bonus-check-item span {
+  margin-left: 10px;
+}
+
+.casino-bonus-card {
+  margin-top: 20px;
+}
+
+.casino-bonus-card .col-md-4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* This will center the child items vertically */
+}
+
+.button-group button {
+  font-family: "Roboto", Sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  width: 40%;
+  padding: 10px;
+  margin: 10px 5px;
+  color: #ffffff;
+  background-color: #cc3366;
+  text-wrap: nowrap;
+}
+
+.button-group button:hover {
+  color: #cc3366;
+}
+
+.up-to-bonus h2 {
+  font-family: "Roboto", Sans-serif;
+  font-size: 16px;
+  color: #f8f8f8;
+  font-weight: bold;
+  margin: 0;
+}
+
+.up-to-bonus .bonus_value {
+  font-family: "Roboto", Sans-serif;
+  font-size: 30px;
+  color: #f8f8f8;
+  font-weight: bold;
+}
+
+@media (min-width: 1400px) {
+  .up-to-bonus {
+    margin-right: 50px;
+  }
+}
+
+@media (max-width: 767px) {
+  .casino-bonus-header {
+    font-size: 38px;
+  }
+  .casino-bonus-header-2 {
+    font-size: 48px;
+  }
+
+  .button-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .button-group button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .casino-bonus-check-item {
+    margin-left: 10px;
+  }
+  .up-to-bonus .bonus_value,
+  .up-to-bonus h2 {
+    color: #1c2152;
+  }
+}
+
+@media (max-width: 576px) {
+  .casino-bonus-header {
+    font-size: 28px;
+  }
+  .casino-bonus-header-2 {
+    font-size: 38px;
+  }
+  .casino-bonus-header-3 .header3-div span {
+    margin-left: 1rem;
+  }
+}

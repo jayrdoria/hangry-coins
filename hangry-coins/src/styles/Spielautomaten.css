@@ -1,0 +1,115 @@
+.spielautomaten-container {
+  background-color: #1e053c;
+}
+
+.spielautomaten-header-container {
+  padding: 40px 10px 40px 10px;
+}
+
+.spielautomaten-header {
+  background-color: #570b42;
+  padding: 20px 10px;
+}
+
+.spielautomaten-header h2 {
+  color: #d91d5f;
+  font-family: "Barlow", Sans-serif;
+  font-size: 41px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  text-align: right;
+  line-height: 1;
+
+  text-shadow: -1px -1px 0 #000, /* top left */ 1px -1px 0 #000,
+    /* top right */ -1px 1px 0 #000, /* bottom left */ 1px 1px 0 #000; /* bottom right */
+}
+
+.spielautomaten-header .col-md-8 h2 {
+  color: #f7e7ec;
+  font-family: "Barlow", Sans-serif;
+  font-size: 47px;
+  font-weight: bold;
+  letter-spacing: 2.8px;
+  word-spacing: 7px;
+  text-align: left;
+  text-shadow: none;
+}
+
+.spielautomaten-header .col-md-8 p {
+  font-family: "Barlow", Sans-serif;
+  font-size: 16px;
+  color: #f7e7ec;
+  font-weight: bold;
+}
+
+.spielautomaten-card {
+  padding: 0 10px 2rem 10px;
+}
+
+.spielautomaten-card .card {
+  position: relative;
+  background-color: #810f47;
+}
+
+.spielautomaten-card .card-body,
+.spielautomaten-card .card {
+  padding: 0;
+}
+
+.spielautomaten-card-first-layer {
+  padding: 35px 0;
+  border-radius: 10px;
+  background-color: #570b42;
+}
+
+.spielautomaten-card-second-layer {
+  background-color: #400d44;
+  border-radius: 10px;
+  padding: 5px;
+}
+.spielautomaten-card img {
+  padding: 30px 15px 0 15px;
+  border-radius: 50px;
+}
+
+.spielautomaten-card-title {
+  font-family: "Barlow", Sans-serif;
+  font-size: 16px;
+  color: #06091a;
+  background-color: #e3e2e8;
+  text-align: center;
+  font-weight: bold;
+  padding: 5px;
+  margin: 20px 0 10px 0;
+}
+
+.spielautomaten-card a {
+  background-color: #e0255d;
+  width: 60%;
+  font-family: "Barlow", Sans-serif;
+  font-size: 13px;
+  color: #ffffff;
+  font-weight: 500;
+  text-wrap: nowrap;
+}
+
+.spielautomaten-card a:hover {
+  background-color: #e0255d;
+  color: #ffffff;
+  border: 1px solid black;
+}
+@media (max-width: 767px) {
+  .spielautomaten-card img {
+    width: 340px;
+  }
+}
+
+@media (max-width: 576px) {
+  .spielautomaten-header h2 {
+    font-size: 36px;
+  }
+  .spielautomaten-header .col-md-8 h2 {
+    font-size: 42px;
+  }
+}
