@@ -1,0 +1,71 @@
+.footer-container {
+  background-color: #060919;
+  padding: 0 10px 50px 10px;
+}
+
+.footer-container h2 {
+  color: #ec1356;
+  font-family: "Barlow", Sans-serif;
+  font-size: 19px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0px 0 10px 0;
+}
+
+.footer-container .col-md-8 h2 {
+  color: #f7e7ec;
+  font-family: "Barlow", Sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  padding: 30px 0 10px 0;
+  text-align: center;
+}
+
+.footer-container .col-md-8 p {
+  color: #f7e7ec;
+  font-family: "Barlow", Sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 0 10px;
+}
+
+.footer-container input {
+  font-family: "Barlow", Sans-serif;
+  font-size: 13px;
+  padding: 15px;
+  font-weight: bold;
+}
+
+.footer-container input::placeholder {
+  opacity: 0.75; /* Adjust this value to your preference */
+}
+
+.footer-container button {
+  background-color: #ec1356;
+  color: #ffffff;
+  font-family: "Barlow", Sans-serif;
+  font-size: 15px;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.footer-container button:active {
+  background-color: #ec1356 !important;
+  color: #ffffff !important;
+  border: 1px solid #ec1356 !important;
+}
+
+.footer-container button:hover {
+  background-color: #ffffff;
+  color: #ec1356;
+}
+.separator {
+  border-right: 2px solid #333333; /* Adjust the color and width as per your design */
+  margin-top: 30px;
+}
+
+@media (max-width: 767px) {
+  .footer-container {
+    padding-bottom: 20px;
+  }
+}

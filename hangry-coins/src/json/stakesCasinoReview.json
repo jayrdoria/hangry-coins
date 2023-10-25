@@ -1,0 +1,78 @@
+{
+  "casinoHeaderImage": "header-image-improve.png",
+  "casinoHeaderTitle": "150% Jusqu'à €1000 + 50 Free Spins",
+  "casinoName": "STAKES",
+  "casinoLogo": "stakes.png",
+  "websiteUrl": "https://www.stakes.com/",
+  "rating": "9/10",
+  "license": "Curacao",
+  "acceptedCountries": "Deutschland, Kanada, Schweiz, Österreich, Schweden & Finnland",
+  "languages": "English, German, French & Spanish",
+  "gameTypes": "Spielautomaten, Live-Casino, Jackpots, Tischspiele.",
+  "customerSupport": "Live Chat 24/7",
+  "supportEmail": "support@hd.stakes.com",
+  "casinoReviewTitle": "STAKES CASINO REVIEW 2022",
+  "casinoReviewInfo": "Wenn Sie nach einer großartigen Online-Casino-Website suchen, ist Stakes das Beste für Sie! Neben vielen Boni, die sie ihren neuen und alten Spielern anbieten, haben sie auch 40 verschiedene zuverlässige Spielanbieter mit über 2965 Spielen zur Auswahl. Stakes Casino wurde 2016 von Mountberg BV gegründet. Stakes ist unter der Curacao-Lizenz lizenziert und zieht seitdem deutsche Spieler mit seiner großen Auswahl an Spielen an. Spieler können auch die Erfahrung von sofortigen, grenzenlosen Einzahlungen bei Einsätzen genießen, ohne dass den Spielern Transaktionsgebühren auferlegt werden. Wenn Sie sich bei Stakes Casino registrieren oder Ihr Konto eröffnen möchten, klicken Sie einfach auf die Schaltfläche „Bonus beanspruchen“, um zu spielen und automatisch das großzügige Willkommensbonusangebot in Anspruch zu nehmen.",
+  "cards": [
+    {
+      "image": "withdrawal.png",
+      "alt": "Withdrawal Image",
+      "title": "Withdrawal Methods",
+      "backDetails": [
+        ["Visa", "Bank", "Interac"],
+        ["Mastercard", "Transfer", "Interac"],
+        ["Ecopayz", "Neteller", "Online"],
+        ["Astropay", "Mobile", "CoinsPaid"],
+        ["Cashlib", "Payment", "Bitspace"],
+        ["Mobile", "Skrill", "CashToCode"],
+        ["Payment", "Paysafe", "Flexepin"],
+        ["", "Card", ""]
+      ]
+    },
+    {
+      "image": "deposit.png",
+      "alt": "Deposit Image",
+      "title": "Deposit Methods",
+      "backDetails": [
+        ["Mastercard", "Transfer", "Interac"],
+        ["Sofort", "Neteller", "Online"],
+        ["Ecopayz", "Mobile", "CoinsPaid"],
+        ["Astropay", "Payment", "Bitspace"],
+        ["Cashlib", "Skrill", "CashToCode"],
+        ["", "Paysafe", "Flexepin"],
+        ["", "Card", ""],
+        ["", "Mobile", ""],
+        ["", "Payment", ""]
+      ]
+    },
+    {
+      "image": "currency.png",
+      "alt": "Currency Image",
+      "title": "Accepted Currencies",
+      "backDetails": [
+        ["Euro", "Swiss", "Franc"],
+        ["Canadian Dollars", "Crypto Currencies", "Norwegian Krone"],
+        ["", "US Dollars", ""]
+      ]
+    },
+    {
+      "image": "game provider.png",
+      "alt": "Game Provider Image",
+      "title": "Game Provider",
+      "backDetails": [
+        ["Betsoft Gaming", "EGT Interactive", "ELK Studios"],
+        ["Evoplay", "Endorphina", "Evolution Gaming"],
+        ["Booming Games", "GameArt", "Habanero"],
+        ["Hacksaw Gaming", "iSoftBet Reevo", "iSoftBet"],
+        ["Big Time Gaming Branded", "Just For The Win", "Microgaming"],
+        ["NetEnt", "Nolimit City", "NetEnt Premium"],
+        ["One Touch", "GAMOMAT", "Pragmatic Play"],
+        ["PG Soft", "Play’n Go", "Push Gaming"],
+        ["Playson Premium", "Playson", "Big Time Gaming Branded"],
+        ["Relax Gaming", "Quickspin", "Red Tiger Gaming"],
+        ["Swintt Premium", "Spinmatic", "Spinomenal"],
+        ["Swintt", "Thunderkick", "Yggsdrasil Gaming"]
+      ]
+    }
+  ]
+}

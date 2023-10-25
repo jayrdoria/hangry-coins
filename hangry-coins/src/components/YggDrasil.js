@@ -22,10 +22,6 @@ function YggDrasil() {
       );
   }, []);
 
-  if (details.length === 0) {
-    return <div>Loading...</div>;
-  }
-
   return (
     <div className="png-container">
       <div className="container">

@@ -1,6 +1,8 @@
 const express = require("express");
 const mysql = require("mysql2");
 const cors = require("cors");
+const AWS = require("aws-sdk");
+const bodyParser = require("body-parser");
 
 const app = express();
 const port = 5001;
@@ -16,6 +18,18 @@ const dbConfig = {
   connectionLimit: 10,
   queueLimit: 0,
 };
+
+AWS.config.update({
+  accessKeyId: process.env.AWS_ACCESS_KEY_ID,
+  secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
+  region: process.env.AWS_REGION,
+});
+
+const ses = new AWS.SES();
+
+// This is necessary to parse the POST request body
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
 // Create a pool instead of a single connection
 const pool = mysql.createPool(dbConfig);
@@ -103,6 +117,75 @@ app.get("/freispiele", (req, res) => {
       res.json(formattedResults);
     }
   );
+});
+
+app.get("/casinoBonus", (req, res) => {
+  pool.query(
+    "SELECT id, logo_path, casino_name, check_items, website_link, bonus_percentage, bonus_value, free_spins FROM casinoBonus",
+    (err, results) => {
+      if (err) {
+        console.error("Database error:", err);
+        return res
+          .status(500)
+          .json({ error: "Internal Server Error", details: err.message });
+      }
+
+      res.json(results);
+    }
+  );
+});
+
+app.get("/spielautomaten", (req, res) => {
+  pool.query(
+    "SELECT id, image_path, game_provider FROM spielautomaten",
+    (err, results) => {
+      if (err) {
+        console.error("Database error:", err);
+        return res
+          .status(500)
+          .json({ error: "Internal Server Error", details: err.message });
+      }
+
+      res.json(results);
+    }
+  );
+});
+
+app.post("/send-email", (req, res) => {
+  const { email } = req.body; // Extract email from request body
+
+  if (!email) {
+    return res.status(400).json({ error: "Email is required." });
+  }
+
+  const emailData = {
+    Source: "info@lagueslo.com",
+    Destination: {
+      ToAddresses: ["info@lagueslo.com"],
+    },
+    Message: {
+      Subject: {
+        Data: "Hangry Coins New Subscriber!",
+      },
+      Body: {
+        Text: {
+          Data: `${email} subscribed to our newsletter!`, // Use template literals to insert the email value
+        },
+      },
+    },
+  };
+
+  ses.sendEmail(emailData, (err, data) => {
+    if (err) {
+      console.error("Error sending email:", err);
+      return res.status(500).json({
+        error: "Failed to send email",
+        details: err.message,
+        stack: err.stack,
+      });
+    }
+    res.json({ success: true, message: "Email sent successfully!", data });
+  });
 });
 
 app.listen(port, () => {
