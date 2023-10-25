@@ -10,9 +10,12 @@ function Footer() {
     event.preventDefault();
 
     try {
-      const response = await axios.post("http://localhost:5001/send-email", {
-        email,
-      });
+      const response = await axios.post(
+        "https://hangrycoins.com:5001/send-email",
+        {
+          email,
+        }
+      );
       // console.log(response.data);
 
       // Handle success

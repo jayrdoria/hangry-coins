@@ -9,7 +9,7 @@ function Netent() {
   }, []);
 
   useEffect(() => {
-    fetch(`http://localhost:5001/homeGameProviderDetails`)
+    fetch(`https://hangrycoins.com:5001/homeGameProviderDetails`)
       .then((response) => response.json())
       .then((data) => {
         const netentDetails = data.filter(

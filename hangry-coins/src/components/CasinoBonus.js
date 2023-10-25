@@ -13,7 +13,7 @@ function CasinoBonus() {
     document.title = "Casino Bonus Page - HangryCoins";
 
     // Fetch data from your backend
-    fetch("http://localhost:5001/casinoBonus") // Adjust the endpoint if needed
+    fetch("https://hangrycoins.com:5001/casinoBonus") // Adjust the endpoint if needed
       .then((response) => response.json())
       .then((data) => setData(data))
       .catch((error) => console.error("Error fetching data:", error));

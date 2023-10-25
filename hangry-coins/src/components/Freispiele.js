@@ -10,7 +10,7 @@ function Freispiele() {
     document.title = "Free Spins - HangryCoins";
 
     // Fetch data from the server
-    fetch("http://localhost:5001/freispiele")
+    fetch("https://hangrycoins.com:5001/freispiele")
       .then((response) => response.json())
       .then((data) => setCasinos(data))
       .catch((error) => console.error("Error fetching data:", error));
