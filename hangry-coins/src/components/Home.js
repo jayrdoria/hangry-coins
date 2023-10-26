@@ -15,13 +15,23 @@ function Home() {
   useEffect(() => {
     // Fetching game providers
     fetch("https://hangrycoins.com:5001/homeGameProvider")
-      .then((response) => response.json())
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+        return response.json();
+      })
       .then((data) => setGameProvider(data))
       .catch((error) => console.error("Error fetching game providers:", error));
 
     // Fetching FAQs
     fetch("https://hangrycoins.com:5001/homeFaq")
-      .then((response) => response.json())
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+        return response.json();
+      })
       .then((data) => setFaqs(data))
       .catch((error) => console.error("Error fetching FAQs:", error));
   }, []);
