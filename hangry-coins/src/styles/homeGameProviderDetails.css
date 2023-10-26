@@ -18,7 +18,6 @@
   background-color: #c9c9c9;
 }
 .border-wrapper {
-  display: inline-block;
   padding: 0px 30px 10px 30px; /* Adjust this to control the border thickness */
   background-color: #400d44; /* Your desired border color */
   border-radius: 5px;
@@ -275,7 +274,7 @@
 }
 
 @media (max-width: 576px) {
-  .png-container h2 {
+  .png-container h2.text-center.mt-4 {
     font-size: 63px;
   }
 }
