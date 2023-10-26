@@ -218,7 +218,3 @@ app.post("/send-email", (req, res) => {
     res.json({ success: true, message: "Email sent successfully!", data });
   });
 });
-
-app.listen(port, () => {
-  console.log(`Server running at http://localhost:${port}/`);
-});
