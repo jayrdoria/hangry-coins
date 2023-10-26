@@ -274,7 +274,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 576px) {
   .png-container h2 {
     font-size: 63px;
   }
