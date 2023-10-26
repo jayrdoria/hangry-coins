@@ -10,15 +10,15 @@ const app = express();
 const port = 5001;
 
 const privateKey = fs.readFileSync(
-  "/home/admin/web/hangrycoins.com/ssl/ssl.hangrycoins.com.key",
+  "/home/admin/conf/web/ssl.hangrycoins.com.key",
   "utf8"
 );
 const certificate = fs.readFileSync(
-  "/home/admin/web/hangrycoins.com/ssl/ssl.hangrycoins.com.crt",
+  "/home/admin/conf/web/ssl.hangrycoins.com.crt",
   "utf8"
 );
 const ca = fs.readFileSync(
-  "/home/admin/web/hangrycoins.com/ssl/ca.crt",
+  "/home/admin/conf/web/ssl.hangrycoins.com.crt",
   "utf8"
 );
 app.use(

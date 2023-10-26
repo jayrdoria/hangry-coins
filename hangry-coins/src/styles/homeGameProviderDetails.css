@@ -273,3 +273,9 @@
     padding-bottom: 10px;
   }
 }
+
+@media (max-width: 767px) {
+  .png-container h2 {
+    font-size: 63px;
+  }
+}
